@@ -13,17 +13,17 @@ export function PageHero({ eyebrow, title, description }: PageHeroProps) {
         className="pointer-events-none absolute -right-16 top-0 h-56 w-56 rounded-full bg-saffron/10 blur-3xl"
         aria-hidden
       />
-      <Container className="py-14 sm:py-16">
+      <Container className="py-10 sm:py-14 lg:py-16">
         {eyebrow ? (
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-saffron-deep">
+          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-saffron-deep sm:text-xs">
             {eyebrow}
           </p>
         ) : null}
-        <h1 className="max-w-3xl font-display text-4xl leading-tight text-navy sm:text-5xl">
+        <h1 className="max-w-3xl font-display text-3xl font-bold leading-tight text-navy sm:text-4xl md:text-5xl">
           {title}
         </h1>
         {description ? (
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted sm:mt-4 sm:text-base md:text-lg">
             {description}
           </p>
         ) : null}

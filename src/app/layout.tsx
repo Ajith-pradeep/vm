@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollProgress } from "@/components/animations/ScrollProgress";
 import { siteConfig } from "@/data/site";
 import "./globals.css";
 
 const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -60,6 +62,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${sourceSans.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body className="relative flex min-h-full flex-col bg-white text-foreground">
+        <ScrollProgress />
         <Header />
         <main className="relative z-10 flex-1">{children}</main>
         <Footer />

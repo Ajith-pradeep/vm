@@ -26,12 +26,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-source-sans), system-ui, sans-serif;
+  font-family: var(--font-source-sans), "Segoe UI", sans-serif;
 }
 
 h1,
@@ -40,6 +42,7 @@ h3,
 h4,
 .font-display {
   font-family: var(--font-cormorant), Georgia, serif;
+  font-weight: 700;
 }
 
 ::selection {

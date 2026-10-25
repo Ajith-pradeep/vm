@@ -5,14 +5,14 @@ import { formatDate } from "@/lib/utils";
 
 export function NewsCard({ article }: { article: NewsArticle }) {
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-white transition hover:border-saffron/40 hover:shadow-[0_16px_36px_rgba(23,43,77,0.08)]">
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-white transition hover:border-saffron/40 hover:shadow-[0_20px_44px_rgba(23,43,77,0.1)]">
       <div className="relative aspect-[16/10] overflow-hidden">
         <Image
           src={article.image}
           alt={article.imageAlt}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
-          className="object-cover transition duration-500 group-hover:scale-[1.03]"
+          className="object-cover transition duration-700 group-hover:scale-[1.05]"
         />
         {article.isSample ? (
           <span className="absolute left-3 top-3 rounded bg-navy/85 px-2 py-1 text-[10px] font-semibold uppercase tracking-wider text-white">

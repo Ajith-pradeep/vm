@@ -7,7 +7,7 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.vmuraleedharan.com",
   locale: "en_IN",
   partyAffiliation: "Bharatiya Janata Party",
-  tagline: "Dedicated to Public Service. Committed to Kerala's Progress.",
+  tagline: "V. Muraleedharan",
   social: {
     website: "https://www.vmuraleedharan.com",
     x: "https://x.com/VMBJP",
@@ -30,9 +30,9 @@ export const siteConfig = {
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/journey", label: "Political Journey" },
+  { href: "/journey", label: "Journey" },
   { href: "/initiatives", label: "Initiatives" },
-  { href: "/news", label: "News & Updates" },
+  { href: "/news", label: "News" },
   { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact" },
 ] as const;
